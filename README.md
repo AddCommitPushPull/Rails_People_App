@@ -1,24 +1,33 @@
-# README
+link: http://localhost:3000/
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+Create, view, update, delete Game of Thrones characters. Cannot be blank #VALIDATED
 
-Things you may want to cover:
+People
 
-* Ruby version
+Character #=> "Tyrion Lannister"
 
-* System dependencies
+Age (validates for number) #=> 25
 
-* Configuration
+Hair_color #=> Black
 
-* Database creation
+Eye_color #=> Green
 
-* Database initialization
+Gender #=> Man
 
-* How to run the test suite
+Alive #=> No
 
-* Services (job queues, cache servers, search engines, etc.)
+House #=> "Stark"
 
-* Deployment instructions
+City #=> "Lannisport"
 
-* ...
+Quote #=> "Never forget who you are. The rest of the world won't. Wear it like an armor and it can never be used against you."
+
+Dragons
+
+Dragon #=> "Drogon"
+
+Age #=> "7
+
+Color #=> Red
+
+Alive #=> No
