@@ -1,7 +1,7 @@
-<h1>Edit Person</h1>
+<h1>Edit character</h1>
 <%= form_for @person do |f| %>
-    <%= f.label :name %>
-    <%= f.text_field :name %>
+    <%= f.label :character %>
+    <%= f.text_field :character %>
 
     <%= f.label :age %>
     <%= f.text_field :age %>
@@ -15,8 +15,22 @@
     <%= f.label :gender %>
     <%= f.text_field :gender %>
 
+    <%= f.label :house %>
+    <%= f.text_field :house %>
+
+    <%= f.label :city %>
+    <%= f.text_field :city %>
+
+    <%= f.label :quotes %>
+    <%= f.text_field :quotes %>
+
     <%= f.label :alive %>
     <%= f.text_field :alive %>
 
+    <%= f.label :pet %>
+    <%= f.text_field :pet %>
+
     <%= f.submit %>
+
+
 <% end %>

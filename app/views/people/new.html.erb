@@ -1,24 +1,36 @@
-<h1>New Person</h1>
+<h1>New character</h1>
 <%= form_for @person do |f| %>
-    <%= f.label :name %>
-    <%= f.text_field :name %>
+  <%= f.label :character %>
+    <%= f.text_field :character %>
 
     <%= f.label :age %>
     <%= f.text_field :age %>
 
     <%= f.label :hair_color %>
     <%= f.text_field :hair_color %>
-
+    <br>
     <%= f.label :eye_color %>
     <%= f.text_field :eye_color %>
 
     <%= f.label :gender %>
     <%= f.text_field :gender %>
 
+    <%= f.label :house %>
+    <%= f.text_field :house %>
+    <br>
+    <%= f.label :city %>
+    <%= f.text_field :city %>
+
+    <%= f.label :quotes %>
+    <%= f.text_field :quotes %>
+
     <%= f.label :alive %>
     <%= f.text_field :alive %>
-
+    <br>
+    <%= f.label :pet %>
+    <%= f.text_field :pet %>
     <%= f.submit %>
+    <% puts Faker::TvShows::GameOfThrones.character%>
 <% end %>
 
 

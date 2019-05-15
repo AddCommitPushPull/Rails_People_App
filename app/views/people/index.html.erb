@@ -1,10 +1,12 @@
-<h1> Pages </h1>
-<p><%= link_to 'New person', new_person_path %></p>
+<h3> The Cast </h3>
+<p><%= link_to 'New character', new_person_path %></p>
 
-<h1> People </h1>
 <% @people.each do |person| %>
-    <h2><%= person.name %></h2>
-    <%= link_to 'Show Person', person_path(person) %>
-    <%= link_to 'Edit person', edit_person_path(person) %>
-    <%= link_to 'Destroy Person', person, method: :delete %>
+
+    <h2><%= person.character %></h2>
+    
+    <%= link_to 'Edit', edit_person_path(person) %>
+    <%= link_to 'DELETE', person, method: :delete %>
+    <%= link_to 'More info', person_path(person) %>
+    
 <% end %>
